@@ -184,4 +184,3 @@ export const DISHES =
         ]
         }
     ];
-    export dishes;
