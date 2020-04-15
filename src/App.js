@@ -6,15 +6,13 @@ import './App.css';
 import {DISHES} from './shared/dishes';
 import { render } from '@testing-library/react';
 
-function App() {
-
+class SomeComponent extends React.Component{
   constructor (props) {
     super(props);
     this.state= {
       dishes: DISHES
-    };
+    }
   }
-
   render() {
     return (
       <div className="App">
@@ -31,6 +29,14 @@ function App() {
       </div>
     );
   }
+}
+
+function App() {
+    return (
+      <div className="App">
+       <SomeComponent></SomeComponent>
+      </div>
+    );
   }
 
 
